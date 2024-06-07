@@ -12,6 +12,13 @@
 //Initial Loading
 ```
 
+# Getting HTML Elements into a Variable
+
+```html
+// # means id
+const coursesTable = document.querySelector("#coursesTable");
+```
+
 # Forms
 
 ## Input
