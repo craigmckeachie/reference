@@ -215,7 +215,8 @@ let myObject = {
   last: "Doe",
 }; //myObject is an object created using an object literal
 
-console.log(myObject.last);
+//object dot propertyname is know as dot notation
+console.log(myObject.last); //"Doe"
 ```
 
 ### Array
