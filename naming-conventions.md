@@ -7,7 +7,7 @@
 firstName;
 lastName;
 numberOfStars;
-isCheecked;
+isChecked;
 
 //one-word
 first;
