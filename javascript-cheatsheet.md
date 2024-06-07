@@ -229,7 +229,6 @@ for (let letter of letters) {
 //b
 //c
 
-
 let numbers = [1, 2, 3]; //array of numbers
 for (let number of numbers) {
   console.log(number);
@@ -237,7 +236,6 @@ for (let number of numbers) {
 //1
 //2
 //3
-
 
 //array of objects
 let people = [
@@ -258,7 +256,6 @@ let people = [
 for (let person of people) {
   console.log(person.last);
 }
-
 ```
 
 #### for in
@@ -287,7 +284,47 @@ for (const propertyName in myObject) {
 
 #### find
 
+```js
+//array of objects
+let people = [
+  {
+    first: "John",
+    last: "Doe",
+  },
+  {
+    first: "Jane",
+    last: "Goodale",
+  },
+  {
+    first: "James",
+    last: "Madison",
+  },
+];
+
+let person = people.find((person) => person.last == "Goodale");
+console.log(person.first); //Jane
+```
+
 #### filter
+
+```js
+//array of objects
+const nbaTeams = [
+  { name: "Los Angeles Lakers", division: "Pacific" },
+  { name: "Golden State Warriors", division: "Pacific" },
+  { name: "Chicago Bulls", division: "Central" },
+  { name: "Miami Heat", division: "Southeast" },
+  { name: "Dallas Mavericks", division: "Southwest" },
+];
+
+let pacificTeams = nbaTeams.filter((team) => team.division == "Pacific");
+console.log(pacificTeams);
+
+// [
+//   { name: "Los Angeles Lakers", division: "Pacific" },
+//   { name: "Golden State Warriors", division: "Pacific" },
+// ];
+```
 
 #### map
 
