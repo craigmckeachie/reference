@@ -6,7 +6,37 @@
 
 ### get
 
+```html
+<label for="firstNameInput">First Name</label>
+<input
+  type="text"
+  id="firstNameInput"
+  placeholder="enter first name"
+  value="Craig"
+/>
+
+<script>
+  "use strict";
+  const firstNameInput = document.querySelector("#firstNameInput");
+  let firstName = firstNameInput.value;
+  console.log(firstName); //Craig
+</script>
+```
+
 ### set
+
+```html
+<label for="firstNameInput">First Name</label>
+<input type="text" id="firstNameInput" placeholder="enter first name" />
+
+<script>
+  "use strict";
+  const firstNameInput = document.querySelector("#firstNameInput");
+  firstNameInput.value = "Adeyemi";
+</script>
+```
+
+![input set](images/input-set.png)
 
 ## Dropdown (Select)
 
