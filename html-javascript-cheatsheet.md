@@ -352,3 +352,7 @@ using anonymous arrow function inline
 # Hide & Show
 
 # Call API
+
+```js
+
+```

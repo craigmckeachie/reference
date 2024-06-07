@@ -1,18 +1,14 @@
 "use strict";
 
-//array of objects
-const nbaTeams = [
-  { name: "Los Angeles Lakers", division: "Pacific" },
-  { name: "Golden State Warriors", division: "Pacific" },
-  { name: "Chicago Bulls", division: "Central" },
-  { name: "Miami Heat", division: "Southeast" },
-  { name: "Dallas Mavericks", division: "Southwest" },
-];
+async function initialize() {
+  async function fetchUsers() {
+    let response = await fetch("http://jsonplaceholder.typicode.com/users");
+    let users = await response.json();
+    return users;
+  }
 
-let pacificTeams = nbaTeams.filter((team) => team.division == "Pacific");
-console.log(pacificTeams);
+  let users = await fetchUsers();
+  console.log(users);
+}
 
-// [
-//   { name: "Los Angeles Lakers", division: "Pacific" },
-//   { name: "Golden State Warriors", division: "Pacific" },
-// ];
+initialize();
