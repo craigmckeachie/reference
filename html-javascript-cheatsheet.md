@@ -151,18 +151,85 @@
 ```html
 <div id="messageDiv"></p>
 
-    <script>
-      "use strict";
-      const messageDiv = document.querySelector("#messageDiv");
-      let message = "Message in the bottle.";
-      messageDiv.innerText = message;
-      //displays message in div above
-    </script>
+<script>
+  "use strict";
+  const messageDiv = document.querySelector("#messageDiv");
+  let message = "Message in the bottle.";
+  messageDiv.innerText = message;
+  //displays message in div above
+</script>
 ```
 
 # Events
 
 ## Associate function with HTML Element's event
+
+using `on[event]` property
+
+- define function then use on[event] property of the element
+
+```html
+<button id="saveButton">Save</button>
+
+<script>
+  "use strict";
+  const saveButton = document.querySelector("#saveButton");
+
+  function save() {
+    console.log("saved");
+  }
+
+  saveButton.onclick = save;
+</script>
+```
+
+using `addEventListener`
+
+- define function then for event and associate it with the function
+
+```html
+<button id="saveButton">Save</button>
+
+<script>
+  "use strict";
+  const saveButton = document.querySelector("#saveButton");
+
+  function save() {
+    console.log("saved");
+  }
+
+  document.addEventListener("click", save);
+</script>
+```
+
+using anonymous function inline
+
+```html
+<button id="saveButton">Save</button>
+
+    <script>
+      "use strict";
+      const saveButton = document.querySelector("#saveButton");
+
+      document.addEventListener("click", function () {
+        console.log("saved");
+      });
+```
+
+using anonymous arrow function inline
+
+```html
+<button id="saveButton">Save</button>
+
+<script>
+  "use strict";
+  const saveButton = document.querySelector("#saveButton");
+
+  document.addEventListener("click", () => {
+    console.log("saved");
+  });
+</script>
+```
 
 # Build
 

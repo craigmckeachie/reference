@@ -6,14 +6,15 @@
     <title>Playground</title>
   </head>
   <body>
-    <div id="messageDiv"></p>
+    <button id="saveButton">Save</button>
 
     <script>
       "use strict";
-      const messageDiv = document.querySelector("#messageDiv");
-      let message = "Message in the bottle.";
-      messageDiv.innerText = message;
-      //displays message in div above
+      const saveButton = document.querySelector("#saveButton");
+
+      document.addEventListener("click",  () => {
+        console.log("saved");
+      });
     </script>
   </body>
 </html>
