@@ -127,6 +127,7 @@ Complete example WITH `thead` and `tbody`
 ### Dropdown (select)
 
 ```html
+<label for="animalDropdown">Animal</label>
 <select id="animalDropdown">
   <option value="">Select...</option>
   <option value="1">Dog</option>

@@ -6,17 +6,14 @@
     <title>Playground</title>
   </head>
   <body>
-    <label for="firstNameInput">First Name</label>
-    <input
-      type="text"
-      id="firstNameInput"
-      placeholder="enter first name"
-    />
+    <div id="messageDiv"></p>
 
     <script>
       "use strict";
-      const firstNameInput = document.querySelector("#firstNameInput");
-      firstNameInput.value = "Adeyemi";
+      const messageDiv = document.querySelector("#messageDiv");
+      let message = "Message in the bottle.";
+      messageDiv.innerText = message;
+      //displays message in div above
     </script>
   </body>
 </html>
