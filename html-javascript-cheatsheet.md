@@ -3,13 +3,31 @@
 # Recipe
 
 ```js
+window.onload = function ()  {
 //HTML Variables
+const submitButton = document.querySelector('#submitButton')
 
 //Functions
+function submit (){
+// code here
+}
+
+function loadCategoryDropdown(){
+// code here
+}
+
+function loadUserTable(){
+// code here
+}
 
 //Associate Function to Event
+submitButton.onclick = submit;
 
 //Initial Loading
+loadCategoryDropdown();
+loadUserTable();
+
+}
 ```
 
 # Getting HTML Elements into a Variable
